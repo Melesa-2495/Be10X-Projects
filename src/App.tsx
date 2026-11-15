@@ -212,7 +212,7 @@ export default function App() {
                 <div className="lg:col-span-6 relative min-h-[260px] lg:min-h-[360px] bg-[#eceef0]">
                   <SafeImage
                     src={HERO_DISH_IMAGE}
-                    alt="Wild King Salmon & Tri-Color Quinoa Bowl"
+                    alt="Plateful allergen-verified greens, roasted heirloom vegetables, citrus, and cold-pressed herb oil"
                     className="w-full h-full lg:absolute lg:inset-0 object-cover"
                   />
                 </div>

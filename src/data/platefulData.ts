@@ -1,11 +1,16 @@
+import heroPlatefulSpreadImg from '@/src/assets/images/hero_plateful_spread_1794737219972.jpg';
 import heroClinicalKitchenImg from '@/src/assets/images/hero_clinical_kitchen_1794735438570.jpg';
 import kitchenVerdantImg from '@/src/assets/images/kitchen_verdant_table_1794735439557.jpg';
+import kitchenHarborStudioImg from '@/src/assets/images/kitchen_harbor_studio_1794737221354.jpg';
+import kitchenSolsticeGrillImg from '@/src/assets/images/kitchen_solstice_grill_1794737222361.jpg';
 import dishMisoSalmonImg from '@/src/assets/images/dish_miso_salmon_bowl_1794735439950.jpg';
 import dishHerbChickenImg from '@/src/assets/images/dish_herb_chicken_plate_1794735440262.jpg';
 import dishMediterraneanLentilImg from '@/src/assets/images/dish_mediterranean_lentil_1794735440526.jpg';
+import dishAlmondTroutImg from '@/src/assets/images/dish_almond_trout_plate_1794737220627.jpg';
+import dishChickenQuinoaImg from '@/src/assets/images/dish_chicken_quinoa_bowl_1794737221425.jpg';
 import type { AllergenId, Dish, Kitchen, SafetyProfile } from '@/src/types/plateful';
 
-export const HERO_DISH_IMAGE = heroClinicalKitchenImg;
+export const HERO_DISH_IMAGE = heroPlatefulSpreadImg;
 
 export const ALLERGEN_LABELS: Record<AllergenId, { label: string; filterLabel: string }> = {
   gluten: { label: 'Gluten / Wheat', filterLabel: 'Gluten-Free' },
@@ -46,7 +51,7 @@ export const KITCHENS: Kitchen[] = [
     name: 'Harbor & Grain Studio',
     neighborhood: 'Embarcadero',
     cuisineFocus: 'Wild Seafood & Mineral Grains',
-    image: dishMisoSalmonImg,
+    image: kitchenHarborStudioImg,
     safetyScore: 96.8,
     deliveryMinutes: '25–34 min',
     auditDate: 'Nov 10, 2026',
@@ -61,7 +66,7 @@ export const KITCHENS: Kitchen[] = [
     name: 'Solstice Allergen-Safe Grill',
     neighborhood: 'Hayes Valley',
     cuisineFocus: 'Mediterranean Plant & Pasture Plates',
-    image: dishHerbChickenImg,
+    image: kitchenSolsticeGrillImg,
     safetyScore: 93.5,
     deliveryMinutes: '28–36 min',
     auditDate: 'Nov 08, 2026',
@@ -294,7 +299,7 @@ export const DISHES: Dish[] = [
     category: 'Plates',
     price: 22.0,
     servingGrams: 430,
-    image: dishHerbChickenImg,
+    image: dishAlmondTroutImg,
     calories: 610,
     proteinG: 44,
     carbsG: 22,
@@ -343,7 +348,7 @@ export const DISHES: Dish[] = [
     category: 'Bowls',
     price: 19.0,
     servingGrams: 455,
-    image: heroClinicalKitchenImg,
+    image: dishChickenQuinoaImg,
     calories: 525,
     proteinG: 48,
     carbsG: 42,
