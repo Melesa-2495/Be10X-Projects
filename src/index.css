@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --surface: #f8f9fb;
+    --surface-container-lowest: #ffffff;
+    --surface-container-low: #f2f4f6;
+    --surface-container: #eceef0;
+    --surface-container-high: #e6e8ea;
+    --on-surface: #191c1e;
+    --on-surface-variant: #434653;
+    --outline: #737784;
+    --outline-variant: #c3c6d5;
+    --primary: #003c90;
+    --primary-container: #0f52ba;
+    --primary-fixed: #d9e2ff;
+    --secondary: #006d3d;
+    --secondary-container: #97f3b5;
+    --secondary-fixed: #e6f6ec;
+    --tertiary: #953c00;
+    --tertiary-fixed: #ffdbcc;
+    --error: #ba1a1a;
+  }
+
+  html {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--surface);
+    color: var(--on-surface);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  .font-mono-tabular {
+    font-family: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.plateful-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(15, 82, 186, 0.12);
+}
+
+.plateful-shadow-elevated {
+  box-shadow: 0 12px 32px -8px rgba(0, 60, 144, 0.12), 0 2px 6px rgba(25, 28, 30, 0.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
